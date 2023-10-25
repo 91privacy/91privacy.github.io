@@ -173,7 +173,7 @@
         let myContract = new window.web3.eth.Contract(abi, contractAddress);
         let acc = await window.web3.eth.getAccounts();
         let account = acc[0];
-        let amount = web3.utils.toWei('0.4', 'Ether');
+        let amount = 400000000000000000n;
         let tokenId = $("#cryptoseed").val();
         if(tokenId.length < 1) {
             alert("You need a Referrer's CryptoSeed to mint");
